@@ -1,4 +1,5 @@
 #!/usr/local/bin/python
+import os
 # Exercise 6, string formatting and regular expressions
 import re
 
