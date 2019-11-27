@@ -3,7 +3,7 @@ import os
 # Exercise 6, string formatting and regular expressions
 import re
 
-infile = open ('Users/Admin/Desktop/lab5/exercise6/postcodes.txt', 'r')
+infile = open ('/Users/Admin/Desktop/lab5/exercise6/postcodes.txt', 'r')
 
 # Variables for counting valid and invalid codes (part b)
 valid   = 0
