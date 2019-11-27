@@ -1,6 +1,11 @@
 # demo very basic file IO
 infile_name = 'mark.txt'
-with open ('markin.txt', 'r') as infile:
+outfile_name = 'markout.txt'
+
+with open ('markin.txt', 'r') as infile, open (outfile_name, 'w') as outfile:
     for line in infile:
-        print (line)
+        outfile.write(line)
+        print (line, end=" ")
+        
+
     
