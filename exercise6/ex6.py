@@ -1,3 +1,4 @@
+#!/usr/local/bin/python
 # Exercise 6, string formatting and regular expressions
 import re
 
@@ -14,13 +15,13 @@ for postcode in infile:
     if postcode.isspace(): continue
     
     # TODO (a): Remove newlines, tabs and spaces
-    
+    postcode = re.sub('[ \t\n]', '', postcode)
     
     # TODO (a): Convert to uppercase  
-    
+    postcode = postcode.upper()
 
     # TODO (a): Insert a space before the final digit and 2 letters
-    
+    postcode = re.sub('([0-9][A-Z]{2})$', r' \1', postcode)
     
     # Print the reformatted postcode
     print (postcode)
@@ -29,7 +30,7 @@ for postcode in infile:
     m = 0   # TODO (b) Replace this line with a call to re.match()
     
     if m:
-        valid   = valid + 1
+        valid = valid + 1
     else:
         invalid = invalid + 1
         
